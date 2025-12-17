@@ -1,0 +1,758 @@
+body{
+    background-color: rgb(185, 131, 131);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: absolute; /* sits on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* above carousel */
+    padding: 10px 50px;
+    /* make sure background is transparent */
+    background: transparent !important; 
+    box-shadow: none; /* remove any shadow */
+
+}
+/* Default (large screens) */
+#nav-txt {
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none !important;
+}
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+
+#nav-txt{
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+.navbar button{
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 15px;
+    width: 200px;
+    color: white;
+    background-color: rgb(11, 102, 188);
+    border-radius: 50px;
+    padding-left: 10px;
+}
+.nav-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* ABOUT */
+
+.about{
+    margin-top: 30px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.about h2{
+    color: rgb(30, 129, 221);
+    font-weight: 600;
+    font-size: 35px;
+}
+.about p{
+    font-size: 20px;
+}
+.about button{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    border-radius: 40px;
+    background-color: white;
+    border: 2px black solid;
+}
+
+/* ABOUT-IMAGES */
+
+.about-imgs{
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    justify-content: center;
+    align-self: center;
+}
+.ab-img{
+    position: relative;
+    cursor: pointer;
+     transition: transform 0.3s ease;
+}
+.ab-img:hover{
+    transform: scale(1.03);
+}
+.ab-img img{
+    border-radius: 5px;
+}
+.img-text {
+  position: absolute;
+  top: 79%; /* center vertically */
+  left: 32%; /* center horizontally */
+  transform: translate(-50%, -50%);
+  color: white; /* visible text */
+  background: transparent; /* optional semi-transparent bg */
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.img-text h2 {
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.img-text img{
+  justify-self: left;
+}
+
+/* OUR POTENTIAL */
+.potential{
+    background-color: rgba(210, 205, 205, 0.495);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.potential h2{
+    font-family: sans-serif;
+    color: rgb(30, 129, 221);
+    font-weight: 600;
+    font-size: 35px;
+}
+.potential-txt h1{
+    color: rgb(211, 142, 40);
+    font-size: 60px;
+}
+.potential-txt{
+    display: flex;
+    flex-direction: row;
+    gap: 215px; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* BLOGS */
+.blogs{
+    background-color: rgba(225, 220, 220, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    padding-bottom: 50px;
+}
+.blogs h2{
+    font-family: sans-serif;
+    color: rgb(30, 129, 221);
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 40px;
+}
+.blogs button{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    border-radius: 40px;
+    background-color: white;
+    border: 2px black solid;
+    margin-top: 15px;
+}
+.blog-imgs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#blog-img{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 300px;
+   text-align: center;
+}
+#blog-img img{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#blog-img img:hover{
+    transform: scale(1.01); 
+}
+#blog-img span{
+    color: rgb(43, 133, 235);
+    font-size: 12px;
+    font-weight: 600;
+}
+#blog-img h4{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#blog-txt{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#blog-date{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+/* EVENT GALLERY */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gallery h2{ 
+    font-family: sans-serif;
+    color: rgb(30, 129, 221);
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 40px;
+}
+.gallery-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.gallery-cards p{
+    font-size: 14px;
+    margin-top: 14px;
+}
+.gallery-cards button{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    border-radius: 40px;
+    background-color: white;
+    border: 2px black solid;
+}
+
+
+/* CAREERS */
+.careers{
+    margin-top: 40px;
+    padding: 70px 150px;
+    background-color: rgba(163, 156, 156, 0.482);
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.career-txt{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.career-txt h2{
+    font-family: sans-serif;
+    color: rgb(30, 129, 221);
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 40px;
+}
+.career-txt p{
+    line-height: 25px;
+    font-size: 13px;
+}
+.career-txt button{
+    width: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    border-radius: 40px;
+    background-color: white;
+    border: 2px black solid;
+    padding: 8px;
+}
+
+
+/* CONTACT */
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 120px;
+    justify-content: center;
+    align-items: self-start;
+    font-size: 15px;
+}
+.contact h2{
+    font-family: sans-serif;
+    color: rgb(30, 129, 221);
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 40px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.my-input{
+    background-color: rgba(232, 224, 224, 0.461);
+    border: none;
+    height: 40px;
+}
+.contact button{
+    color: rgba(0, 119, 255, 0.858);
+    width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    border-radius: 40px;
+    background-color: white;
+    border: 2px rgba(0, 119, 255, 0.858) solid;
+    padding: 4px;
+}
+
+/* BRANDS */
+.brands{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.brands h2{
+    font-family: sans-serif;
+    color: rgb(30, 129, 221);
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 40px;
+}
+.brands-imgs{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* FOOTER 1 */
+.footer1{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 20px;
+}
+.footer1-txt{
+    width: 250px;
+    line-height: 30px;
+}
+.footer1-txt h6{
+    font-weight: bold;
+    font-size: 10px;
+}
+.footer1 p{
+    margin-top: 25px;
+    font-size: 13px;
+    color: rgba(128, 128, 128, 0.822)
+}
+
+/* FOOTER */
+.footer{
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 35px 120px;
+}
+.footer p{
+    color: gray;
+    font-size: 8px;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 992px) {
+  /* Hide nav links by default */
+  #nav-txt {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(30, 129, 221);
+    position: absolute;
+    top: 80px; /* adjust below your navbar height */
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    color: rgb(202, 197, 197);
+    font-weight: 900;
+    font-size: larger;
+  }
+
+  /* Show hamburger */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Show menu when checkbox checked */
+  #menu-toggle:checked ~ #nav-txt {
+    display: flex;
+  }
+  .nav-btn{
+    display: none !important;
+  }
+  .about{
+    align-items: center;
+    text-align: center;
+  }
+  .about-imgs{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* POTENTIAL */
+  .potential-txt{
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  /* BLOGS */
+.blog-imgs,.blogs{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* GALLERY */
+.gallery-cards{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CAREERS */
+
+.careers{
+    flex-direction: column;
+    gap: 5px;
+}
+.career-txt{
+    width: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact{
+    align-items: center;
+}
+.contact h2{
+    font-size: 25px;
+}
+.contact-form{
+    align-items: center;
+    gap: 10px;
+}
+.my-input{
+    width: 170px;
+}
+
+/* BRANDS */
+.brands{
+    align-items: center;
+}
+.brands-imgs{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOOTER 1 */
+.footer1{
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer{
+    align-items: center;
+}
+}
+
+/* 1400px+ Screens ke liye Full Width Layout */
+@media (min-width: 1400px) {
+  /* Body pe max-width hata do */
+  body {
+    max-width: none; /* Yeh hata do */
+    margin: 0;
+    background-color: rgb(185, 131, 131);
+  }
+  
+  /* Navbar ko full width rakhne do */
+  .navbar {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: none;
+    width: 100%;
+  }
+  
+  /* Carousel images ko stretch karo full width */
+  .carousel-item img {
+    width: 100%;
+    height: 550px; /* Fixed height */
+    object-fit: cover;
+  }
+  
+  /* About images ka gap badhao */
+  .about-imgs {
+    gap: 30px; /* Gap increase for large screens */
+  }
+  
+  .ab-img img {
+    width: 320px; /* Images thodi badi karo */
+    height: 420px;
+  }
+  
+  /* Potential section mein gap badhao */
+  .potential-txt {
+    gap: 300px; /* Gap increase */
+  }
+  
+  /* Blogs section mein gap badhao */
+  .blog-imgs {
+    gap: 40px;
+  }
+  
+  #blog-img {
+    width: 320px; /* Blog cards thode bade */
+  }
+  
+  /* Gallery cards ka gap badhao */
+  .gallery-cards {
+    gap: 50px;
+  }
+  
+  /* Careers section ko stretch karo */
+  .careers {
+    padding: 70px 200px; /* More padding on sides */
+    justify-content: space-around;
+  }
+  
+  .career-txt {
+    width: 650px; /* Text area bada karo */
+  }
+  
+  /* Contact form ko stretch karo */
+  .contact {
+    padding: 30px 200px;
+  }
+  
+  .contact-form {
+    gap: 120px; /* More gap between form columns */
+  }
+  
+  .my-input {
+    width: 400px; /* Input fields wider */
+  }
+  
+  /* Brands images ka gap badhao */
+  .brands-imgs {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .brands-imgs img {
+    width: 140px; /* Brand logos thode bade */
+    height: 110px;
+  }
+  
+  /* Footer1 ko spread out karo */
+  .footer1 {
+    justify-content: space-between;
+    padding: 0 150px;
+    gap: 60px;
+  }
+  
+  .footer1-txt {
+    width: 280px; /* Text areas wider */
+  }
+  
+  /* Footer bottom */
+  .footer {
+    padding: 35px 200px;
+  }
+}
+
+/* 1600px+ Screens ke liye additional scaling */
+@media (min-width: 1600px) {
+  .about-imgs {
+    gap: 50px;
+  }
+  
+  .ab-img img {
+    width: 350px;
+    height: 450px;
+  }
+  
+  .potential-txt {
+    gap: 350px;
+  }
+  
+  #blog-img {
+    width: 350px;
+  }
+  
+  .careers {
+    padding: 70px 250px;
+  }
+  
+  .career-txt {
+    width: 700px;
+  }
+  
+  .contact {
+    padding: 30px 250px;
+  }
+  
+  .footer1 {
+    padding: 0 200px;
+  }
+  
+  .footer1-txt {
+    width: 300px;
+  }
+}
+
+/* 1920px+ (Full HD Screens) */
+@media (min-width: 1920px) {
+  .carousel-item img {
+    height: 650px; /* Taller carousel */
+  }
+  
+  .about-imgs {
+    gap: 80px;
+  }
+  
+  .ab-img img {
+    width: 400px;
+    height: 500px;
+  }
+  
+  .potential-txt {
+    gap: 400px;
+  }
+  
+  .blog-imgs {
+    gap: 60px;
+  }
+  
+  #blog-img {
+    width: 380px;
+  }
+  
+  .gallery-cards {
+    gap: 80px;
+  }
+  
+  .gallery-cards img {
+    width: 400px;
+    height: 250px;
+  }
+  
+  .careers {
+    padding: 70px 300px;
+  }
+  
+  .career-txt {
+    width: 800px;
+  }
+  
+  .contact {
+    padding: 30px 300px;
+  }
+  
+  .contact-form {
+    gap: 150px;
+  }
+  
+  .my-input {
+    width: 450px;
+  }
+  
+  .brands-imgs {
+    gap: 60px;
+  }
+  
+  .brands-imgs img {
+    width: 160px;
+    height: 130px;
+  }
+  
+  .footer1 {
+    padding: 0 250px;
+    gap: 80px;
+  }
+  
+  .footer1-txt {
+    width: 320px;
+  }
+  
+  .footer {
+    padding: 35px 250px;
+  }
+}
